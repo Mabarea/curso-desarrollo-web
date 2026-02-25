@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clase 4</title>
+  </head>
+
+  <body>
+    <h1>Aqui el (<)&lt;br /&gt;(>) si funciona</h1>
+
+    <table border="1">
+  <thead>
+    <tr>
+      <th rowspan="2" scope="col">Estudiante</th>
+      <th colspan="2" scope="colgroup">Exámenes</th>
+    </tr>
+    <tr>
+      <th scope="col">Teoría</th>
+      <th scope="col">Práctica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Juan</th>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+    <label for="coment"
+      >Observaciones <br />
+      sobre el producto comprado</label
+    ><br />
+
+    <textarea
+      id="coment"
+      name="comentario"
+      rows="5"
+      cols="40"
+      placeholder="Escribe aquí tu observación"
+      maxlength="200"
+      required
+    >
+ ejemplo  donde la etiqueta  &<br /> no funciona ni el \n</textarea
+    >
+    <br />
+
+    <input type="text" />
+    <br />
+
+    <select id="prov" name="provincia" required>
+      <!-- <option value="" disabled selected>-- Elige una opcion--</option>
+ -->
+      <optgroup label="Extremadura">
+        <option value="cc">Cáceres</option>
+        <option value="ba">Badajoz</option>
+      </optgroup>
+
+      <optgroup label="Andalucía">
+        <option value="se" selected>Sevilla</option>
+        <option value="co" selected>Córdoba</option>
+      </optgroup>
+    </select>
+
+    <br />
+
+    <select name="lenguajes" multiple size="4">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">JS</option>
+      <option value="php">PHP</option>
+      <option value="rust">RUST</option>
+      <option value="cpp">C++</option>
+    </select>
+
+    <br />
+    <label for="ciudad">Ciudad</label>
+    <input
+      id="ciudad"
+      name="ciudad"
+      list="ciudades"
+      placeholder="Empieza a escribir..."
+    />
+    <datalist id="ciudades">
+      <option value="Cáceres"></option>
+      <option value="Badajoz"></option>
+      <option value="Mérida"></option>
+      <option value="Plasencia"></option>
+    </datalist>
+
+    <br />
+
+    <audio controls>
+      <source src="../audio/cacmetal1.mp3" />
+
+      Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <br />
+    <video controls width="480">
+      <source src="../videos/piccoloTerapia.mp4" />
+      <track
+        kind="subtitles"
+        src="subs/es.vtt"
+        srclang="es"
+        label="Español"
+        default
+      />
+      <track kind="subtitles" src="subs/en.vtt" srclang="en" label="English" />
+      Tu navegador no soporta vídeo HTML5.
+    </video>
+    <br />
+    <iframe
+      width="500"
+      height="500"
+      id="gmap_canvas"
+      src="https://maps.google.com/maps?q=42.4111778,-8.8133897&output=embed&t=k&hl=es"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+    >
+    </iframe>
+    <br />
+    <fieldset>
+      <legend>¿Qué turno prefieres?</legend>
+
+      <input type="radio" id="manana" name="" value="manana" required />
+      <label for="manana">Mañana</label>
+      <br />
+
+      <input type="radio" id="tarde" name="turno" value="tarde" />
+      <label for="tarde">Tarde</label>
+      <br />
+
+      <input type="radio" id="noche" name="turno" value="noche" />
+      <label for="noche">Noche</label>
+    </fieldset>
+  </body>
+</html>

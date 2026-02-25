@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="pruebaenlaces/gracias.html" method="post">
+
+        <label for="user">Usuario</label><br />
+        <input id="user" name="user" type="text" placeholder="Introduce tu usuario" required><br />
+
+        <label for="pass">Contraseña</label><br />
+        <input id="pass" name="pass" type="password" placeholder="Introduce tu password" required><br />
+
+        <label for="email">Email</label><br />
+        <input id="email" name="email" type="email" placeholder="Introduce tu email"><br />
+
+        <label for="edad">Edad</label><br />
+        <input id="edad" name="edad" type="number" placeholder="Introduce tu edad"><br /><br />
+
+        <label for="idioma">Idioma:</label><br />
+
+        <label for="espanol">Español</label>
+        <input type="radio" id="esp" name="idioma" value="Español"><br />
+
+        <label for="ingles">Ingles</label>
+        <input type="radio" id="ing" name="idioma" value="Ingles"><br />
+
+        <br />
+        <!-- Alternativa a input como boton -->
+        <!-- <button type="submit">Enviar</button> -->
+        <input type="submit" value="enviar"><br /><br />
+        <input type="reset" value="reset"><br /><br />
+    </form>
+
+    <!-- Formulario para enviar archivos -->
+    <form action="pruebaenlaces/gracias.html" method="post" enctype="multipart/form-data">
+
+        <label for="doc">Seleccionar Documentos</label>
+        <input id="doc" name="doc" type="file" accept=".pdf,.doc,.docx" multiple><!-- Quitar multiple si solo se quiere enviar un archivo -->
+
+        <button type="submit">Subir</button>
+    </form>
+
+</body>
+
+</html>
